@@ -8,7 +8,6 @@
 #include "gc0329.h" // camera
 #include "camera_demo.h"
 #include "fatfs.h"
-#include "info_a.h"
 
 uint8_t g_sd_valid = 0;
 static uint8_t keyB = 0;
@@ -199,9 +198,6 @@ static void app_delayed_action(void *arg)
       }
       keyB = 0;
     }
-
-    LOG("Call a new component\n");
-    info_a_fun();
 
     aos_post_delayed_action(500, app_delayed_action, NULL);
 }
