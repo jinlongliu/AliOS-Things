@@ -20,7 +20,7 @@ static void littlevgl_refresh_task(void *arg)
     while (1) {
         /* this function is used to refresh the LCD */
         lv_task_handler();
-        printf("littlevgl_refresh_task\n");
+        // printf("littlevgl_refresh_task\n");
         krhino_task_sleep(RHINO_CONFIG_TICKS_PER_SECOND / 10);
     }
 }

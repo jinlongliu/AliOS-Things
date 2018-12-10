@@ -113,7 +113,7 @@ static void sensor_refresh_task(void *arg)
         }
     }
 
-    printf("sensor_refresh_task\n");
+    // printf("sensor_refresh_task\n");
 
     task1_count++;
 }
