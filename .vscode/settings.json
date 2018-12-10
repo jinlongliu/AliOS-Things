@@ -1,23 +1,29 @@
 {
     "aliosStudio.inner.yosBin": "aos",
-    "aliosStudio.hardware.board": "starterkit",
-    "aliosStudio.name": "helloworld",
+    "aliosStudio.hardware.board": "developerkit",
+    "aliosStudio.name": "developerkitaudio",
     "aliosStudio.buildList": [
         {
             "name": "clean"
         },
         {
-            "name": "helloworld@starterkit"
+            "name": "helloworld@developerkit"
         },
         {
-            "name": "starterkitgui@starterkit"
+            "name": "developerkitgui@developerkit"
         },
         {
-            "name": "mqttapp@starterkit"
+            "name": "mqttapp@developerkit"
         }
     ],
     "aliosStudio.build.multiBin": false,
     "aliosStudio.build.multiBinTarget": "app",
     "aliosStudio.flashAllBin": false,
-    "aliosStudio.isAosSource": true
+    "aliosStudio.isAosSource": true,
+    "aliosStudio.comPort": "COM9",
+    "aliosStudio.hardware.baudrate": 115200,
+    "aliosStudio.sdkPath": "${workspaceRoot}",
+    "files.associations": {
+        "st7789.h": "c"
+    }
 }
