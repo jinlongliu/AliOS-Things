@@ -25,7 +25,8 @@
 #define GROUP_GPIOF    5
 #define GROUP_GPIOG    6
 #define GROUP_GPIOH    7
-	 
+
+// PA
 #define HAL_GPIO_0                 ((uint8_t)0)        /* represent GPIOA pin 0 */
 #define HAL_GPIO_1                 ((uint8_t)1)        /* represent GPIOA pin 1 */
 #define HAL_GPIO_2                 ((uint8_t)2)        /* represent GPIOA pin 2 */
@@ -42,7 +43,8 @@
 #define HAL_GPIO_13                ((uint8_t)13)       /* represent GPIOA pin 13 */
 #define HAL_GPIO_14                ((uint8_t)14)       /* represent GPIOA pin 14 */
 #define HAL_GPIO_15                ((uint8_t)15)       /* represent GPIOA pin 15 */
-	 
+
+// PB 
 #define HAL_GPIO_16                ((uint8_t)16)       /* represent GPIOB pin 0 */
 #define HAL_GPIO_17                ((uint8_t)17)       /* represent GPIOB pin 1 */
 #define HAL_GPIO_18                ((uint8_t)18)       /* represent GPIOB pin 2 */
@@ -60,6 +62,7 @@
 #define HAL_GPIO_30                ((uint8_t)30)       /* represent GPIOB pin 14 */
 #define HAL_GPIO_31                ((uint8_t)31)       /* represent GPIOB pin 15 */
 
+// PC
 #define HAL_GPIO_32                ((uint8_t)32)       /* represent GPIOC pin 0 */
 #define HAL_GPIO_33                ((uint8_t)33)       /* represent GPIOC pin 1 */
 #define HAL_GPIO_34                ((uint8_t)34)       /* represent GPIOC pin 2 */
@@ -77,6 +80,7 @@
 #define HAL_GPIO_46                ((uint8_t)46)       /* represent GPIOC pin 14 */
 #define HAL_GPIO_47                ((uint8_t)47)       /* represent GPIOC pin 15 */
 
+// PD
 #define HAL_GPIO_48                ((uint8_t)48)       /* represent GPIOD pin 0 */
 #define HAL_GPIO_49                ((uint8_t)49)       /* represent GPIOD pin 1 */
 #define HAL_GPIO_50                ((uint8_t)50)       /* represent GPIOD pin 2 */
@@ -94,6 +98,7 @@
 #define HAL_GPIO_62                ((uint8_t)62)       /* represent GPIOD pin 14 */
 #define HAL_GPIO_63                ((uint8_t)63)       /* represent GPIOD pin 15 */
 
+// PE
 #define HAL_GPIO_64                ((uint8_t)64)       /* represent GPIOE pin 0 */
 #define HAL_GPIO_65                ((uint8_t)65)       /* represent GPIOE pin 1 */
 #define HAL_GPIO_66                ((uint8_t)66)       /* represent GPIOE pin 2 */
@@ -191,6 +196,7 @@
 #define WIFI_WU                    HAL_GPIO_17
 #define ZIGBEE_INT                 HAL_GPIO_72
 #define ZIGBEE_RST                 HAL_GPIO_55
+#define SG90_PWM                   HAL_GPIO_49
 
 #define GPIOA_SPEED	 GPIO_SPEED_FREQ_VERY_HIGH
 
