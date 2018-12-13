@@ -6,16 +6,18 @@
 #include "soc_init.h"
 
 #define FIRST_LED      GPIO_ALS_LED
-#define SG90_PWM_TEST  GPIO_SG90_PWM
+#define OUTPUT_GPIO    GPIO_PD1_DEMO
 
 static void app_delayed_action(void *arg)
 {
-    LOG("helloworld %s:%d %s\r\n", __func__, __LINE__, aos_task_name());
+
+    LOG("GPIO ouput demo %s:%d %s\r\n", __func__, __LINE__, aos_task_name());
     hal_gpio_output_low(&brd_gpio_table[FIRST_LED]);
-    hal_gpio_output_high(&brd_gpio_table[SG90_PWM_TEST]);
+    hal_gpio_output_high(&brd_gpio_table[OUTPUT_GPIO]);
     aos_msleep(3000);
     hal_gpio_output_high(&brd_gpio_table[FIRST_LED]);
-    hal_gpio_output_low(&brd_gpio_table[SG90_PWM_TEST]);
+    hal_gpio_output_low(&brd_gpio_table[OUTPUT_GPIO]);
+
     aos_post_delayed_action(5000, app_delayed_action, NULL);
 }
 

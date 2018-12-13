@@ -1,7 +1,7 @@
 
-NAME := pwm
+NAME := gpio_demo
 
-$(NAME)_SOURCES := pwm.c
+$(NAME)_SOURCES := gpio_demo.c
 
 GLOBAL_DEFINES += AOS_NO_WIFI
 

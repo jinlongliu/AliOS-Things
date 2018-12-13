@@ -126,7 +126,7 @@ gpio_dev_t brd_gpio_table[] = {
     {WIFI_WU, OUTPUT_PUSH_PULL, &gpio_set},
     {ZIGBEE_INT, IRQ_MODE, &mode_rising},
     {ZIGBEE_RST, OUTPUT_PUSH_PULL, &gpio_set},
-    {SG90_PWM, OUTPUT_PUSH_PULL, &gpio_set}
+    {GIPO_PD1, OUTPUT_PUSH_PULL, &gpio_set}
 };
 
 i2c_dev_t brd_i2c2_dev = {AOS_PORT_I2C2, {0}, NULL};
